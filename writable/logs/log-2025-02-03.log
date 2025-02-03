@@ -203,3 +203,44 @@ Stack trace:
 #14 C:\xampp\htdocs\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #15 C:\xampp\htdocs\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #16 {main}
+CRITICAL - 2025-02-03 13:29:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: users/2/edit]
+in APPPATH\Views\users_edit_view.php on line 15.
+ 1 APPPATH\Views\users_edit_view.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\app\\Views\\users_edit_view.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\app\\Views\\users_edit_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_edit_view', [], true)
+ 5 APPPATH\Controllers\UserController.php(46): view('users_edit_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-02-03 13:36:46 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan.php on line 11.
+ 1 APPPATH\Views\laporan.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\app\\Views\\laporan.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\app\\Views\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan', [], true)
+ 5 APPPATH\Controllers\LaporanController.php(18): view('laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-02-03 13:37:55 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: laporan]
+in APPPATH\Controllers\LaporanController.php on line 15.
+ 1 APPPATH\Controllers\LaporanController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\app\\Controllers\\LaporanController.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-96a1e60\\public\\index.php')

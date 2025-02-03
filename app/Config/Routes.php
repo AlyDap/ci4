@@ -13,3 +13,5 @@ $routes->get('/users/(:num)', 'UserController::show/$1');
 $routes->get('/users/(:num)/edit', 'UserController::edit/$1');
 $routes->post('/users/(:num)', 'UserController::update/$1');
 $routes->get('/users/(:num)/delete', 'UserController::delete/$1');
+
+$routes->get('/laporan', 'LaporanController::index');

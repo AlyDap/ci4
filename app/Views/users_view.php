@@ -9,12 +9,10 @@
 </head>
 
 <body class="container p-3">
-
  <h1>List Of Users</h1>
  <a href="/users/new" class="btn btn-primary mb-3">Add User</a>
-
+ <a type="button" href="/laporan" class="btn btn-outline-info mb-3">PDF</a>
  <table class="table table-bordered">
-
   <thead>
    <tr>
     <th>No</th>
@@ -23,7 +21,6 @@
     <th>Action</th>
    </tr>
   </thead>
-
   <tbody>
    <?php foreach ($users as $i => $item) { ?>
     <tr>
@@ -38,9 +35,7 @@
     </tr>
    <?php } ?>
   </tbody>
-
  </table>
-
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </body>

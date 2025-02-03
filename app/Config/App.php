@@ -3,6 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
+use Dompdf\Dompdf;
 
 class App extends BaseConfig
 {
@@ -199,4 +200,11 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+    public $dompdf = [
+        'isRemoteEnabled' => true,
+        'tempDir' => WRITEPATH . 'dompdf_temp',
+        'fontDir' => WRITEPATH . 'dompdf_fonts',
+        'fontCache' => WRITEPATH . 'dompdf_font_cache',
+    ];
 }
