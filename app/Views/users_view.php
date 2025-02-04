@@ -18,6 +18,7 @@
     <th>No</th>
     <th>Name</th>
     <th>Type</th>
+    <th>Status</th>
     <th>Action</th>
    </tr>
   </thead>
@@ -27,6 +28,7 @@
      <td><?= ++$i; ?></td>
      <td><?= $item['name']; ?></td>
      <td><?= $item['type']; ?></td>
+     <td><?= ($item['status'] == 1) ? 'Aktif' : 'Tidak Aktif' ?></td>
      <td>
       <a href="/users/<?= $item['id']; ?>" class="btn btn-info btn-sm">detail</a>
       <a href="/users/<?= $item['id']; ?>/edit" class="btn btn-warning btn-sm">edit</a>

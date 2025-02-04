@@ -15,3 +15,5 @@ $routes->post('/users/(:num)', 'UserController::update/$1');
 $routes->get('/users/(:num)/delete', 'UserController::delete/$1');
 
 $routes->get('/laporan', 'LaporanController::index');
+$routes->get('/laporan/lihat', 'LaporanController::show');
+$routes->post('/laporan/search', 'LaporanController::search');
